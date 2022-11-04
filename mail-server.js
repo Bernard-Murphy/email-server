@@ -8,6 +8,11 @@ const server = new SMTPServer({
         console.log('auth', auth);
         console.log('session', session);
         next();
+    },
+    onData(stream, session, callback) {
+        console.log(session)
+        stream.pipe(process.stdout); // print message to console
+        stream.on("end", callback);
     }
 });
 
