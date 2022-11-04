@@ -15,7 +15,7 @@ const transporter = nodemailer.createTransport({
 });
 
 const mailOptions = {
-    from: 'test@suelightning.com',
+    from: 'test@mail.suelightning.com',
     to: 'inouty67@man2man.xyz',
     subject: 'Test',
     html: message
