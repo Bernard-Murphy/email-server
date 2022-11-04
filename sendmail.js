@@ -1,4 +1,4 @@
-const sendmail = require('sendmail')({
+require('sendmail')({
     logger: {
       debug: console.log,
       info: console.info,
@@ -6,10 +6,6 @@ const sendmail = require('sendmail')({
       error: console.error
     },
     silent: false,
-    dkim: { // Default: False
-      privateKey: fs.readFileSync('./dkim-private.pem', 'utf8'),
-      keySelector: 'mydomainkey'
-    }
 })({
     from: 'no-reply@suelightning.com',
     to: 'inouty67@man2man.xyz',
