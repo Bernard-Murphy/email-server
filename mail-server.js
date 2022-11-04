@@ -1,5 +1,5 @@
 const SMTPServer = require('smtp-server').SMTPServer;
-const os = require('node:os');
+const os = require('os');
 
 console.log(os.hostname());
 
