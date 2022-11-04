@@ -4,7 +4,7 @@ const os = require('os');
 console.log(os.hostname());
 
 const server = new SMTPServer({
-    host: 'suelightning.com',
+    host: 'localhost',
     secure: false,
     authOptional: true,
     allowInsecureAuth: true,
