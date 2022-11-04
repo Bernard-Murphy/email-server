@@ -9,10 +9,6 @@ const transporter = nodemailer.createTransport({
     host: 'localhost',
     port: 25,
     secure: false,
-    auth: {
-        user: 'test',
-        pass: 'test'
-    },
     tls: {
         rejectUnauthorized: false
     }
