@@ -8,7 +8,7 @@ const server = new SMTPServer({
     secure: false,
     authOptional: true,
     allowInsecureAuth: true,
-   // disabledCommands: ['STARTTLS'],
+    disabledCommands: ['STARTTLS'],
     onAuth(auth, session, next){
         console.log('auth', auth);
         console.log('session', session);
